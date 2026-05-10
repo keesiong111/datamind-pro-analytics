@@ -1,0 +1,19 @@
+{
+  "name": "datamind-pro",
+  "version": "1.0.0",
+  "description": "Single-file commercial data analysis and personal finance planning dashboard.",
+  "type": "module",
+  "scripts": {
+    "build:assets": "node scripts/generate-assets.mjs"
+  },
+  "keywords": [
+    "data-analysis",
+    "business-intelligence",
+    "dashboard",
+    "finance",
+    "csv",
+    "jupyter"
+  ],
+  "license": "MIT",
+  "private": false
+}

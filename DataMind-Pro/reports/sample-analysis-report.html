@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>DataMind Pro 示例 CSV 分析报告</title>
+<style>
+body{font-family:Arial,"Microsoft YaHei",sans-serif;margin:40px;color:#182235;line-height:1.65}
+h1{font-size:28px;margin:0 0 8px} h2{margin-top:28px;border-bottom:1px solid #d8dee9;padding-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.card{border:1px solid #d8dee9;border-radius:10px;padding:14px;background:#f8fafc}.card b{display:block;font-size:22px;margin-top:6px}
+table{width:100%;border-collapse:collapse;margin-top:12px}th,td{border-bottom:1px solid #e5e7eb;padding:9px;text-align:left}th{background:#f1f5f9}
+.risk{background:#fff7ed;border-left:4px solid #f59e0b;padding:10px 12px;margin:8px 0}
+@media print{body{margin:26px}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<h1>DataMind Pro 示例 CSV 分析报告</h1>
+<p>数据源：<code>data/sample-business-finance.csv</code>。本报告由项目内置 Node 脚本自动生成。</p>
+<div class="grid">
+  <div class="card">记录数<b>7</b></div>
+  <div class="card">字段数<b>6</b></div>
+  <div class="card">收入规模<b>¥97,400</b></div>
+  <div class="card">利润率<b>56.6%</b></div>
+</div>
+<h2>商业 KPI</h2>
+<table><tbody>
+<tr><th>收入字段</th><td>销售额</td><th>成本字段</th><td>成本</td></tr>
+<tr><th>收入</th><td>¥97,400</td><th>成本</th><td>¥42,300</td></tr>
+<tr><th>利润</th><td>¥55,100</td><th>单均值</th><td>¥142</td></tr>
+<tr><th>缺失单元格</th><td>1</td><th>缺失率</th><td>2.4%</td></tr>
+</tbody></table>
+<h2>渠道贡献</h2>
+<table><thead><tr><th>渠道/维度</th><th>贡献金额</th><th>记录数</th></tr></thead><tbody><tr><td>线上</td><td>¥76,100</td><td>3</td></tr><tr><td>代理</td><td>¥13,000</td><td>2</td></tr><tr><td>线下</td><td>¥8,300</td><td>2</td></tr></tbody></table>
+<h2>风险与建议</h2>
+<div class="risk">未发现默认规则下的高风险项，可继续配置业务阈值。</div>
+<h2>下一步动作</h2>
+<ul>
+<li>将高风险规则加入日报或周报检查清单。</li>
+<li>按渠道、地区、客户进一步拆分收入、成本和利润。</li>
+<li>若用于理财数据，补充资产类别、金额、日期和现金流字段。</li>
+</ul>
+</body>
+</html>
